@@ -1,4 +1,5 @@
 import Branches from "@/components/Branches";
+import Commits from "@/components/Commits";
 import Hero from "@/components/Hero";
 import HowWorkFlows from "@/components/HowWorkFlows";
 import Sidebar from "@/components/Sidebar";
@@ -12,8 +13,9 @@ export default function Home() {
         <Hero />
         <HowWorkFlows />
         <Branches />
+        <Commits />
         {/* Placeholder sections until each one is built. */}
-        {NAV_ITEMS.filter((item) => !["start", "branches"].includes(item.id)).map((item) => (
+        {NAV_ITEMS.filter((item) => !["start", "branches", "commits"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}

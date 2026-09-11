@@ -8,6 +8,8 @@
   --color-ink-soft: #33302a;
   --color-ink-dim: #57524a;
   --color-ink-mid: #6b665c;
+  --color-ink-ghost: #8a847a;
+  --color-ink-pale: #b8b2a7;
   --color-cream: #f3efe8;
   --color-ink-faint: #9a948a;
   --color-line: #e6e1d8;
@@ -18,6 +20,7 @@
   --color-green-line: #cfe6d8;
   --color-green-pale: #b9e6cb;
   --color-green-mint: #8fd1ac;
+  --color-amber: #f2c78c;
 
   --font-sans: var(--font-source-sans), Helvetica, Arial, sans-serif;
   --font-mono: var(--font-source-code), monospace;
