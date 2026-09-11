@@ -1,3 +1,4 @@
+import Branches from "@/components/Branches";
 import Hero from "@/components/Hero";
 import HowWorkFlows from "@/components/HowWorkFlows";
 import Sidebar from "@/components/Sidebar";
@@ -10,8 +11,9 @@ export default function Home() {
       <main className="flex min-w-0 flex-col gap-10 px-3 pb-14 pt-4 min-[521px]:gap-12 min-[521px]:px-5 min-[521px]:pb-16 min-[521px]:pt-6 desk:gap-16 desk:px-14 desk:pb-20 desk:pt-10">
         <Hero />
         <HowWorkFlows />
+        <Branches />
         {/* Placeholder sections until each one is built. */}
-        {NAV_ITEMS.filter((item) => item.id !== "start").map((item) => (
+        {NAV_ITEMS.filter((item) => !["start", "branches"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}
