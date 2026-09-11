@@ -1,7 +1,24 @@
+import Sidebar from "@/components/Sidebar";
+import { NAV_ITEMS } from "@/components/nav-items";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-6">
-      <h1 className="text-4xl font-semibold tracking-tight">Git at BizzNEST</h1>
-    </main>
+    <div className="mx-auto grid min-h-screen max-w-[1240px] grid-cols-[minmax(0,1fr)] desk:grid-cols-[240px_minmax(0,1fr)]">
+      <Sidebar />
+      <main className="flex min-w-0 flex-col gap-10 px-3 pb-14 pt-4 min-[521px]:gap-12 min-[521px]:px-5 min-[521px]:pb-16 min-[521px]:pt-6 desk:gap-16 desk:px-14 desk:pb-20 desk:pt-10">
+        {/* Placeholder sections so the sidebar's scroll-spy can be verified.
+            Each will be replaced by its real component. */}
+        {NAV_ITEMS.map((item) => (
+          <section
+            key={item.id}
+            id={item.id}
+            className="flex min-h-[70vh] scroll-mt-16 flex-col gap-4 desk:scroll-mt-0"
+          >
+            <h2 className="text-3xl font-bold tracking-tight">{item.label}</h2>
+            <p className="text-ink-muted">Section coming soon.</p>
+          </section>
+        ))}
+      </main>
+    </div>
   );
 }
