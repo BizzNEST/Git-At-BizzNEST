@@ -26,6 +26,10 @@
   --font-mono: var(--font-source-code), monospace;
 
   /* The design collapses the sidebar at max-width: 900px, so `desk:` = 901px and up. */
+  --color-rose-line: #d9b8b4;
+  --color-rose: #fbf1ef;
+  --color-rose-deep: #6a2f28;
+
   --breakpoint-desk: 901px;
 }
 
