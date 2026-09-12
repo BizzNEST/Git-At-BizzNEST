@@ -1,4 +1,5 @@
 import Branches from "@/components/Branches";
+import CheatSheet from "@/components/CheatSheet";
 import Commits from "@/components/Commits";
 import CommonMistakes from "@/components/CommonMistakes";
 import Hero from "@/components/Hero";
@@ -24,8 +25,9 @@ export default function Home() {
         <RepoSetup />
         <CommonMistakes />
         <PrChecklist />
+        <CheatSheet />
         {/* Placeholder sections until each one is built. */}
-        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup", "mistakes", "checklist"].includes(item.id)).map((item) => (
+        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup", "mistakes", "checklist", "cheatsheet"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}
