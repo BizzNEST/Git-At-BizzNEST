@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import HowWorkFlows from "@/components/HowWorkFlows";
 import ProjectBoard from "@/components/ProjectBoard";
 import PullRequests from "@/components/PullRequests";
+import RepoSetup from "@/components/RepoSetup";
 import Sidebar from "@/components/Sidebar";
 import { NAV_ITEMS } from "@/components/nav-items";
 
@@ -18,8 +19,9 @@ export default function Home() {
         <Commits />
         <PullRequests />
         <ProjectBoard />
+        <RepoSetup />
         {/* Placeholder sections until each one is built. */}
-        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board"].includes(item.id)).map((item) => (
+        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}
