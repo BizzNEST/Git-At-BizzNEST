@@ -1,5 +1,6 @@
 import Branches from "@/components/Branches";
 import Commits from "@/components/Commits";
+import CommonMistakes from "@/components/CommonMistakes";
 import Hero from "@/components/Hero";
 import HowWorkFlows from "@/components/HowWorkFlows";
 import ProjectBoard from "@/components/ProjectBoard";
@@ -20,8 +21,9 @@ export default function Home() {
         <PullRequests />
         <ProjectBoard />
         <RepoSetup />
+        <CommonMistakes />
         {/* Placeholder sections until each one is built. */}
-        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup"].includes(item.id)).map((item) => (
+        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup", "mistakes"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}
