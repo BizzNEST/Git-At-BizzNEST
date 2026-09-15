@@ -8,7 +8,7 @@ const COMMIT_TYPES = [
   { name: "refactor", desc: "Refactor of production code: upgrading a package and adapting to it, renaming a let or const." },
   { name: "test", desc: "Unit testing only. Creating or refactoring tests, no production code changes." },
   { name: "chore", desc: "Updating gulp, webpack, package.json. Developer-facing only." },
-  { name: "workaround", desc: "Temporary fix until a more robust solution is found." },
+  { name: "workaround",  desc: "Temporary fix until a more robust solution is found." },
 ];
 
 const SPLIT_EXAMPLE = [
