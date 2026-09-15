@@ -1,3 +1,13 @@
+import Branches from "@/components/Branches";
+import CheatSheet from "@/components/CheatSheet";
+import Commits from "@/components/Commits";
+import CommonMistakes from "@/components/CommonMistakes";
+import Hero from "@/components/Hero";
+import HowWorkFlows from "@/components/HowWorkFlows";
+import PrChecklist from "@/components/PrChecklist";
+import ProjectBoard from "@/components/ProjectBoard";
+import PullRequests from "@/components/PullRequests";
+import RepoSetup from "@/components/RepoSetup";
 import Sidebar from "@/components/Sidebar";
 import { NAV_ITEMS } from "@/components/nav-items";
 
@@ -6,9 +16,18 @@ export default function Home() {
     <div className="mx-auto grid min-h-screen max-w-[1240px] grid-cols-[minmax(0,1fr)] desk:grid-cols-[240px_minmax(0,1fr)]">
       <Sidebar />
       <main className="flex min-w-0 flex-col gap-10 px-3 pb-14 pt-4 min-[521px]:gap-12 min-[521px]:px-5 min-[521px]:pb-16 min-[521px]:pt-6 desk:gap-16 desk:px-14 desk:pb-20 desk:pt-10">
-        {/* Placeholder sections so the sidebar's scroll-spy can be verified.
-            Each will be replaced by its real component. */}
-        {NAV_ITEMS.map((item) => (
+        <Hero />
+        <HowWorkFlows />
+        <Branches />
+        <Commits />
+        <PullRequests />
+        <ProjectBoard />
+        <RepoSetup />
+        <CommonMistakes />
+        <PrChecklist />
+        <CheatSheet />
+        {/* Placeholder sections until each one is built. */}
+        {NAV_ITEMS.filter((item) => !["start", "branches", "commits", "pull-requests", "board", "setup", "mistakes", "checklist", "cheatsheet"].includes(item.id)).map((item) => (
           <section
             key={item.id}
             id={item.id}

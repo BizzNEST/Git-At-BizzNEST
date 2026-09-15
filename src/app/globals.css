@@ -5,17 +5,36 @@
   --color-paper: #faf8f4;
   --color-ink: #1f1d19;
   --color-ink-muted: #4a463f;
+  --color-ink-soft: #33302a;
+  --color-ink-dim: #57524a;
+  --color-ink-mid: #6b665c;
+  --color-ink-ghost: #8a847a;
+  --color-ink-pale: #b8b2a7;
+  --color-cream: #f3efe8;
   --color-ink-faint: #9a948a;
   --color-line: #e6e1d8;
   --color-sand: #f0ece4;
   --color-green: #2f7a55;
   --color-green-deep: #1f5c3e;
   --color-green-tint: #e3f1e8;
+  --color-green-line: #cfe6d8;
+  --color-green-pale: #b9e6cb;
+  --color-green-mint: #8fd1ac;
+  --color-amber: #f2c78c;
 
   --font-sans: var(--font-source-sans), Helvetica, Arial, sans-serif;
   --font-mono: var(--font-source-code), monospace;
 
   /* The design collapses the sidebar at max-width: 900px, so `desk:` = 901px and up. */
+  --color-rose-line: #d9b8b4;
+  --color-rose: #fbf1ef;
+  --color-rose-deep: #6a2f28;
+
+  --color-red: #a8483d;
+  --color-paper-soft: #fbfaf7;
+
+  --color-ink-hover: #2a2822;
+
   --breakpoint-desk: 901px;
 }
 
